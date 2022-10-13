@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class OnboardingView extends StatefulWidget {
-  const OnboardingView({Key? key}) : super(key: key);
+class OnBoardingView extends StatefulWidget {
+  const OnBoardingView({Key? key}) : super(key: key);
 
   @override
-  State<OnboardingView> createState() => _OnboardingViewState();
+  State<OnBoardingView> createState() => _OnBoardingViewState();
 }
 
-class _OnboardingViewState extends State<OnboardingView> {
+class _OnBoardingViewState extends State<OnBoardingView> {
   @override
   Widget build(BuildContext context) {
     return Container();
