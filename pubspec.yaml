@@ -93,6 +93,11 @@ flutter:
     - assets/images/contact_us_ic.svg
     - assets/images/invite_friends_ic.svg
     - assets/images/logout_ic.svg
+    - assets/json/loading.json
+    - assets/json/error.json
+    - assets/json/empty.json
+    - assets/json/success.json
+    - assets/translations/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
