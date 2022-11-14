@@ -7,3 +7,5 @@ A new Flutter project.
 flutter packages pub run build_runner build --delete-conflicting-outputs  
 flutter pub add pretty_dio_logger
 
+flutter run --no-sound-null-safety
+
