@@ -6,6 +6,7 @@ import 'package:mvvm_ecommerce/presentation/login/login.dart';
 import 'package:mvvm_ecommerce/presentation/main/main_view.dart';
 import 'package:mvvm_ecommerce/presentation/onboarding/onboarding.dart';
 import 'package:mvvm_ecommerce/presentation/register/register.dart';
+import 'package:mvvm_ecommerce/presentation/resources/strings_manager.dart';
 import 'package:mvvm_ecommerce/presentation/splash/splash.dart';
 import 'package:mvvm_ecommerce/presentation/store_details/store_details.dart';
 
