@@ -6,7 +6,10 @@ import 'package:mvvm_ecommerce/data/request/network/dio_factory.dart';
 import 'package:mvvm_ecommerce/data/request/network/network_info.dart';
 import 'package:mvvm_ecommerce/domain/respository/repository.dart';
 import 'package:mvvm_ecommerce/domain/respository/repository_impl.dart';
+import 'package:mvvm_ecommerce/domain/usecase/login_usecase.dart';
+import 'package:mvvm_ecommerce/presentation/login/login_viewmodel.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 
 
 import 'app_prefs.dart';
@@ -41,4 +44,11 @@ Future<void> initAppModule() async {
   // repository
   instance.registerLazySingleton<Repository>(
           () => RepositoryImpl(instance(), instance()));
+}
+
+initLoginModule(){
+  if(!GetIt.I.isRegistered<LoginUseCase>()){
+    instance.registerFactory<LoginUseCase>(() => LoginUseCase(instance()));
+    instance.registerFactory<LoginViewModel>(() => LoginViewModel(instance()));
+  }
 }

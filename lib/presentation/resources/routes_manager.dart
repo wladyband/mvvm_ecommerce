@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:mvvm_ecommerce/app/di.dart';
 import 'package:mvvm_ecommerce/presentation/forgot_password/forgot_password.dart';
 import 'package:mvvm_ecommerce/presentation/login/login.dart';
 import 'package:mvvm_ecommerce/presentation/main/main_view.dart';
@@ -24,6 +25,7 @@ class RouteGenerator {
       case Routes.splashRoute:
         return MaterialPageRoute(builder: (_) => SplashView());
       case Routes.loginRoute:
+        initLoginModule();
         return MaterialPageRoute(builder: (_) => LoginView());
       case Routes.onBoardingRoute:
         return MaterialPageRoute(builder: (_) => OnBoardingView());
@@ -39,13 +41,14 @@ class RouteGenerator {
         return unDefinedRoute();
     }
   }
+
   static Route<dynamic> unDefinedRoute() {
     return MaterialPageRoute(
         builder: (_) => Scaffold(
           appBar: AppBar(
-            title: Text("No Route Found"),
+            title: Text(AppStrings.noRouteFound),
           ),
-          body: Center(child: Text("No Route Found")),
+          body: Center(child: Text(AppStrings.noRouteFound)),
         ));
   }
 }
