@@ -1,5 +1,3 @@
-
-
 import 'package:mvvm_ecommerce/data/request/network/error_handler.dart';
 
 class Failure {
